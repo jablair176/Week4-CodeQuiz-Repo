@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(228, 236, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(26, 63, 118);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 50px;
+}
+
+.possible-answers {
+    display: flex;
+    border: 3px solid;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-weight: 550;
+    padding-left: 5px;
+
+}
+
+.possible-answers:hover {
+    cursor: pointer;
+}
+
+.answer-text {
+    padding-left: 8px;
+    text-wrap: wrap;
+}
