@@ -5,6 +5,8 @@ var questionCounter = 0;
 var availQuestions = [];
 var currentQuestion = {};
 
+var answering = false;
+
 var questions = [
     {
         question: 'How would you log the length property of the window object?',
@@ -57,7 +59,18 @@ function nextQuestion() {
         ans.innerText = currentQuestion['ans' + number];
     });
 
-
+    availQuestions.splice(questionIndex, 1);
+    answering = true;
 };
+
+ansChoices.forEach(function(ans) {
+    ans.addEventListener('click', function(event) {
+        if (!answering) return;
+        answering = false;
+        
+        
+        nextQuestion();
+    });
+});
 
 startQuiz();
