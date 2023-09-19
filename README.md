@@ -20,4 +20,4 @@ A Coding Quiz project:
 
 ## Link
 
-[Code Quiz Link}(https://jablair176.github.io/Week4-CodeQuiz-Repo/)
+[Code Quiz Link](https://jablair176.github.io/Week4-CodeQuiz-Repo/)
