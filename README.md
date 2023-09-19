@@ -2,12 +2,18 @@
 
 ## Coding Quiz Game 
 
-A coding quiz project to utilise HTML, CSS, and javaScript to create a responsive dynamic experience:
+A Coding Quiz project:
 
 - Generating questions wile keeping track of correct answers
 - Scoring each instance on browser 
 - Offering a highscore page
 - Including a timer that deducts time when answering incorrectly
 
-## Screenshot and link
+## Usage
 
+
+- Select start quiz to begin.
+- Select HighScore to see high scores this session.
+
+
+- Select correct answer from four possble choices. 
