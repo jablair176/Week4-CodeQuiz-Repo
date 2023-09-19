@@ -1,6 +1,10 @@
 var question = document.getElementById('question');
 var ansChoices = Array.from(document.getElementsByClassName('answer-text'));
 
+var questionCounter = 0;
+var availQuestions = [];
+var currentQuestion = {};
+
 var questions = [
     {
         question: 'How would you log the length property of the window object?',
@@ -11,7 +15,7 @@ var questions = [
         corrAns: 1,
     },
     {
-        question: 'getElementbyId() allows uyou to',
+        question: 'getElementbyId() allows you to',
         ans1: 'copy a text',
         ans2: 'change the font type',
         ans3: 'quickly access or return an element',
@@ -27,7 +31,7 @@ var questions = [
         corrAns: 4,
     },
     {
-        question: 'What is bubbling?',
+        question: 'What is Bubbling?',
         ans1: 'refers to events traversing the DOM',
         ans2: 'a screensaver',
         ans3: 'we dont like to talk about it',
@@ -38,5 +42,22 @@ var questions = [
 
 function startQuiz() {
     availQuestions = [ ...questions];
-    
-}
+    nextQuestion();
+
+};
+
+function nextQuestion() {
+    questionCounter++;
+    var questionIndex = Math.floor(Math.random() * availQuestions.length);
+    currentQuestion = availQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
+
+    ansChoices.forEach(function(ans) {
+        var number = ans.dataset['number'];
+        ans.innerText = currentQuestion['ans' + number];
+    });
+
+
+};
+
+startQuiz();
