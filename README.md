@@ -11,11 +11,11 @@ A Coding Quiz project:
 
 ## Usage
 
-
+![homePage](assets/images/screenshot-homePage.png)
 - Select start quiz to begin.
 - Select HighScore to see high scores this session.
 
-
+![questions](assets/images/Screenshot-questions.png)
 - Select correct answer from four possble choices. 
 
 ## Link
